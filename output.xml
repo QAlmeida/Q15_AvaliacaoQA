@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.8.2 on win32)" generated="20200824 23:55:55.281" rpa="false">
+<suite id="s1" name="Q15" source="C:\AvaliacaoQA\Q15_AvaliacaoQA\tests\Q15.robot">
+<test id="s1-t1" name="Cadastrar Usuário">
+<kw name="Dado que acesso o Formulário">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:8080/usuarios</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20200824 23:55:57.182" level="INFO">Opening browser 'firefox' to base url 'http://localhost:8080/usuarios'.</msg>
+<msg timestamp="20200824 23:55:57.221" level="INFO">Firefox driver log is always forced to to: C:\AvaliacaoQA\Q15_AvaliacaoQA\geckodriver-1.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200824 23:56:27.550" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200824 23:56:27.363" endtime="20200824 23:56:27.551"></status>
+</kw>
+<msg timestamp="20200824 23:56:27.615" level="FAIL">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost%3A8080/usuarios&amp;c=UTF-8&amp;d=O%20Firefox%20n%C3%A3o%20conseguiu%20estabelecer%20uma%20conex%C3%A3o%20com%20o%20servidor%20localhost%3A8080.
+</msg>
+<status status="FAIL" starttime="20200824 23:55:57.182" endtime="20200824 23:56:27.615"></status>
+</kw>
+<status status="FAIL" starttime="20200824 23:55:57.181" endtime="20200824 23:56:27.616"></status>
+</kw>
+<status status="FAIL" starttime="20200824 23:55:57.179" endtime="20200824 23:56:27.617" critical="yes">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//localhost%3A8080/usuarios&amp;c=UTF-8&amp;d=O%20Firefox%20n%C3%A3o%20conseguiu%20estabelecer%20uma%20conex%C3%A3o%20com%20o%20servidor%20localhost%3A8080.
+</status>
+</test>
+<doc>Formulário</doc>
+<status status="FAIL" starttime="20200824 23:55:55.286" endtime="20200824 23:56:27.623"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Q15">Q15</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
